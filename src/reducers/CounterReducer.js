@@ -10,6 +10,9 @@ function CounterReducer (state = initialState, action){
         case "DECREMENT_COUNT": {
             return {...state, ...action}
         }
+        case "REFRESH_COUNT": {
+            return {state, ...action}
+        }
         default:
             return state
     }

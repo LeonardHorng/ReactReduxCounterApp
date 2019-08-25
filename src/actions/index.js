@@ -13,3 +13,10 @@ export const decrementCount = count => {
     count: num
   }
 }
+
+export const refreshCount = count => {
+    return {
+        type: 'REFRESH_COUNT',
+        count: 0
+    }
+}

@@ -1,11 +1,13 @@
 import React from 'react'
 
+const pStyle = {
+    marginBottom: '40px',
+};
+
 const Button = (props) => {
 
     return(
-        <div>
-            <button onClick = {props.action} >{props.buttonTitle}</button>
-        </div>
+            <button class="ui primary button" onClick = {props.action} style={pStyle}>{props.buttonTitle}</button>
     )
 }
 
